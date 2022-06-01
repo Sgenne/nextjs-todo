@@ -15,14 +15,17 @@ const Navbar = ({ links }: NavbarProps) => {
   ));
 
   const navClassName = `d-flex justify-content-start ${styles.navbar}`;
-  const logoClassName = `col-6 d-flex align-items-center ms-5 px-5 ${styles.logo}`;
+  const logoContainerClassName = `col-6 d-flex align-items-center ms-5 px-5`;
+  const logoClassName = `d-flex align-items-center ${styles["logo"]}`;
   const linksListClassName = `col-6 d-flex flex-row justify-content-around align-items-center px-5 ${styles.links}`;
 
   return (
     <nav className={navClassName}>
-      <NextLink href="/">
-        <h1 className={logoClassName}>Todo App</h1>
-      </NextLink>
+      <div className={logoContainerClassName}>
+        <NextLink href="/">
+          <h1 className={logoClassName}>Todo App</h1>
+        </NextLink>
+      </div>
       <div className={linksListClassName}>{linkComponents}</div>
     </nav>
   );
