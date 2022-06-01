@@ -9,10 +9,10 @@
 }
 
 .logo {
-    /* border: 2px solid pink; */
     margin: 0;
     height: 100%;   
-    font-size: 34pt; 
+    font-size: 34pt;
+    cursor: pointer; 
 }
 
 .links {
