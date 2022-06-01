@@ -1,13 +1,23 @@
 .navbar {
-    /* border: 2px solid red; */
+    /* border: 2px solid blue; */
     border-bottom: 1px solid grey;
     background-color: #fefefe;
+    padding: 0;
+    /* display: flex;
+    justify-content: center; */
+    height: 10%;
 }
 
 .logo {
-    /* border: 2px solid green; */
+    /* border: 2px solid pink; */
+    margin: 0;
+    height: 100%;   
+    font-size: 34pt; 
 }
 
 .links {
+    /* border: 2px solid green; */
     list-style: none;
-}   
+    padding: 0;
+    height: 100%;
+}

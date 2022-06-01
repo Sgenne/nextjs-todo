@@ -29,8 +29,8 @@ const DUMMY_LINKS: Link[] = [
 // Separate navbar to its own component
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div>
-      <Navbar links={DUMMY_LINKS}/>
+    <div className={styles.layout}>
+      <Navbar links={DUMMY_LINKS} />
       {children}
     </div>
   );
