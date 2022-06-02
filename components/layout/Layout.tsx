@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 import styles from "../../styles/layout/Layout.module.css";
 import Link from "../../types/Link";
+import Background from "./Background";
 import Navbar from "./Navbar";
 
 type LayoutProps = {
@@ -9,19 +10,15 @@ type LayoutProps = {
 
 const DUMMY_LINKS: Link[] = [
   {
-    title: "Wow",
+    title: "Todo List",
     url: "https://nextjs.org/docs/api-reference/next/link",
   },
   {
-    title: "these",
+    title: "History",
     url: "https://nextjs.org/docs/api-reference/next/link",
   },
   {
-    title: "are",
-    url: "https://nextjs.org/docs/api-reference/next/link",
-  },
-  {
-    title: "links",
+    title: "New Todo",
     url: "https://nextjs.org/docs/api-reference/next/link",
   },
 ];
@@ -29,9 +26,14 @@ const DUMMY_LINKS: Link[] = [
 // Separate navbar to its own component
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className={styles.layout}>
-      <Navbar links={DUMMY_LINKS} />
-      {children}
+    <div className={styles["layout"]}>
+      <div className={styles["navbar"]}>
+        <Navbar links={DUMMY_LINKS} />
+      </div>
+      <div className={styles["content"]}>
+        <Background />
+        {children}
+      </div>
     </div>
   );
 };

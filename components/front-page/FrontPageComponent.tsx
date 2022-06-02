@@ -1,9 +1,17 @@
 import styles from "../../styles/FrontPageComponent.module.css";
+import Todo from "../../types/Todo";
+import TodoList from "../todo/TodoList";
 
-const FrontPageComponent = () => {
+interface FrontPageComponentProps {
+  todos: Todo[];
+}
+
+const FrontPageComponent = ({ todos }: FrontPageComponentProps) => {
   return (
-    <div>
-      This is content
+    <div className={styles["container"]}>
+      <div className={styles["todo-list"]}>
+        <TodoList todos={todos} />
+      </div>
     </div>
   );
 };

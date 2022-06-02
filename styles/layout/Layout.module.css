@@ -1,3 +1,12 @@
 .layout {
     height: 100%;
 }
+
+.navbar {
+    height: 16%;
+}
+
+.content {
+    height: 84%;
+    position: relative;
+}

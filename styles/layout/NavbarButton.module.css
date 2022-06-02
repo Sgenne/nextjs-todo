@@ -6,12 +6,13 @@
   padding: 8px;
   border-radius: 6px;
   transition: border 60ms ease-in-out;
+  font-weight: 600;
+  font-size: 18pt;
 }
 
 .button:hover {
   background-color: #f9f9f9;
   border: 1px solid #777777;
-  text-shadow: 0 0 1px black;
   margin-left: 0px;
 }
 

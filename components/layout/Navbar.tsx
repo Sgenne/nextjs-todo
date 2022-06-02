@@ -15,9 +15,9 @@ const Navbar = ({ links }: NavbarProps) => {
   ));
 
   const navClassName = `d-flex justify-content-start ${styles.navbar}`;
-  const logoContainerClassName = `col-6 d-flex align-items-center ms-5 px-5`;
+  const logoContainerClassName = `col-4 d-flex justify-content-center`;
   const logoClassName = `d-flex align-items-center ${styles["logo"]}`;
-  const linksListClassName = `col-6 d-flex flex-row justify-content-around align-items-center px-5 ${styles.links}`;
+  const linksListClassName = `col-8 d-flex flex-row justify-content-around align-items-center px-5 ${styles.links}`;
 
   return (
     <nav className={navClassName}>

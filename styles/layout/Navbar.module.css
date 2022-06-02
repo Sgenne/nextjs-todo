@@ -1,11 +1,8 @@
 .navbar {
-    /* border: 2px solid blue; */
     border-bottom: 1px solid grey;
     background-color: #fefefe;
     padding: 0;
-    /* display: flex;
-    justify-content: center; */
-    height: 16%;
+    height: 100%;
 }
 
 .logo {
@@ -14,11 +11,9 @@
     font-size: 34pt;
     font-weight: 700;
     cursor: pointer; 
-    border: 2px solid red;
 }
 
 .links {
-    /* border: 2px solid green; */
     list-style: none;
     padding: 0;
     height: 100%;
