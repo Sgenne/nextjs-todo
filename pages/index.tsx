@@ -1,6 +1,9 @@
+import { useRouter } from "next/router";
+
 import FrontPageComponent from "../components/front-page/FrontPageComponent";
 import LayoutPage from "../types/LayoutPage";
 import Todo from "../types/Todo";
+import { NEW_TODO_URL } from "./todo/new";
 
 const DUMMY_TODOS: Todo[] = [
   {
@@ -21,11 +24,16 @@ const DUMMY_TODOS: Todo[] = [
     description: "Take a shower with your trash ;)",
     isDone: false,
   },
-
 ];
 
+export const FRONT_PAGE_URL = "/";
+
 const FrontPage: LayoutPage = () => {
-  return <FrontPageComponent todos={DUMMY_TODOS} />;
+  const router = useRouter();
+
+  const addTodoClickHandler = () => router.push(NEW_TODO_URL);
+
+  return <FrontPageComponent todos={DUMMY_TODOS} onAddTodoClick={addTodoClickHandler} />;
 };
 
 export default FrontPage;
